@@ -20,7 +20,7 @@ install_hugo() {
   local bin_path="${bin_install_path}/hugo"
   echo "Downloading CircleCI cli from ${download_url}"
   curl -L -s "$download_url" | tar -C "${install_path}" -xz
-  mv "${install_path}/circleci" "${bin_install_path}/circleci"
+  mv "${install_path}/circleci-cli_${version}_${platform}_${arch}/circleci" "${bin_install_path}/circleci"
   chmod +x $bin_path
 }
 
