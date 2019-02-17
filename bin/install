@@ -36,7 +36,7 @@ get_download_url() {
   local version="$1"
   local platform="$(get_platform)"
   local arch="$(get_arch)"
-  echo "https://github.com/CircleCI-Public/circleci-cli/releases/download/v${version}/circleci-cli_${version}_${platform}-${arch}.tar.gz"
+  echo "https://github.com/CircleCI-Public/circleci-cli/releases/download/v${version}/circleci-cli_${version}_${platform}_${arch}.tar.gz"
 }
 
 install_hugo $ASDF_INSTALL_TYPE $ASDF_INSTALL_VERSION $ASDF_INSTALL_PATH
