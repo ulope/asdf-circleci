@@ -25,7 +25,7 @@ install_hugo() {
 }
 
 get_platform() {
-  uname
+  uname | tr 'A-Z' 'a-z'
 }
 
 get_arch() {
