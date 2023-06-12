@@ -32,7 +32,7 @@ get_platform() {
 }
 
 get_arch() {
-  [[ "x86_64" == "$(uname -m)" ]] && echo "amd64" || echo "i386"
+  [[ "x86_64" == "$(uname -m)" ]] && echo "amd64" || uname -m
 }
 
 get_download_url() {
