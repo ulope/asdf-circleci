@@ -40,9 +40,6 @@ get_arch() {
   arch="$(uname -m)"
   if [[ $arch == "x86_64" ]]; then
     echo "amd64"
-  elif [[ $arch == "arm64" ]]; then
-    # There's no arm64 build yet. See https://github.com/CircleCI-Public/circleci-cli/issues/959
-    echo "amd64"
   else
     echo "$arch"
   fi
